@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>For Fouziya ❤️</title>
     <link rel="stylesheet" href="style.css">
@@ -8,96 +9,143 @@
 <body>
 
     <h1>For Fouziya ❤️</h1>
+
     <p>A small place full of memories</p>
 
-    <hr>
 
-    <button onclick="showSection('memories')">
-        📸 Memories
-    </button>
+    <div class="button-box">
 
-    <button onclick="showSection('dates')">
-        📅 Important Dates
-    </button>
-
-    <button onclick="showSection('voice')">
-        🎙️ Voice Note
-    </button>
-
-    <button onclick="showSection('sos')">
-        💌 SOS / Calm Corner
-    </button>
+        <button onclick="showSection('memories')">
+            📸 Memories
+        </button>
 
 
-    <hr>
+        <button onclick="showSection('dates')">
+            📅 Important Dates
+        </button>
+
+
+        <button onclick="showSection('voice')">
+            🎙️ Voice Note
+        </button>
+
+
+        <button onclick="showSection('sos')">
+            💌 SOS / Calm Corner
+        </button>
+
+    </div>
+
 
 
     <div id="memories" style="display:none;">
+
         <h2>📸 Memories</h2>
-        <p>Yaha photos aur special moments honge ❤️
-        
+
+        <p>
+            Yaha photos aur special moments honge ❤️
         </p>
 
-        <img src="assets/photo1.jpg" width="200">
+        <img src="assets/photo1.jpg">
+
     </div>
+
+
 
 
     <div id="dates" style="display:none;">
+
         <h2>📅 Important Dates</h2>
 
-        <p>Special moments yaha likhenge ❤️</p>
+        <p>
+            Our special moments ❤️
+        </p>
 
         <ul>
-            
-            <li>Special Day (anniversary)-   10 july 2025</li>
-            
-            <li>Her Birthday - 14 Nov 2007 </li>
+
+            <li>Special Day - 10 July 2025</li>
+
+            <li>Her Birthday - 14 November 2007</li>
+
         </ul>
+
     </div>
+
+
 
 
     <div id="voice" style="display:none;">
+
         <h2>🎙️ Voice Note</h2>
-<h2>wait kro baby...</h2>
+
+        <h3>Wait karo baby... ❤️</h3>
+
+
         <audio controls>
+
             <source src="assets/voice.mp3" type="audio/mp3">
+
         </audio>
 
+
     </div>
+
+
+
 
 
     <div id="sos" style="display:none;">
+
         <h2>💌 SOS / Calm Corner</h2>
 
-        <p>
-        Agar kabhi gussa aaye ya mood off ho
-        </p>
 
         <p>
-        cooming soon baby wait kro ...
+            Agar kabhi gussa aaye ya mood off ho...
         </p>
+
+
+        <p>
+            Coming soon baby... ❤️
+        </p>
+
 
     </div>
+
+
+
+
+
+    <footer>
+        Made with ❤️ by Shahbu
+    </footer>
+
+
 
 
 <script>
 
 function showSection(section){
 
+
     document.getElementById("memories").style.display="none";
+
     document.getElementById("dates").style.display="none";
+
     document.getElementById("voice").style.display="none";
+
     document.getElementById("sos").style.display="none";
+
 
 
     document.getElementById(section).style.display="block";
 
+
 }
 
+
 </script>
-<footer>
-    Made with ❤️ by Shahbu
-</footer>
+
 
 </body>
+
 </html>
