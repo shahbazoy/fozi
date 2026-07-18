@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Fouziya ❤️</title>
+</head>
 
+<body>
+
+    <h1>For Fouziya ❤️</h1>
+    <p>A small place full of memories</p>
+
+    <hr>
+
+    <button onclick="showSection('memories')">
+        📸 Memories
+    </button>
+
+    <button onclick="showSection('dates')">
+        📅 Important Dates
+    </button>
+
+    <button onclick="showSection('voice')">
+        🎙️ Voice Note
+    </button>
+
+    <button onclick="showSection('sos')">
+        💌 SOS / Calm Corner
+    </button>
+
+
+    <hr>
+
+
+    <div id="memories" style="display:none;">
+        <h2>📸 Memories</h2>
+        <p>Yaha photos aur special moments honge ❤️</p>
+
+        <img src="assets/photo1.jpg" width="200">
+    </div>
+
+
+    <div id="dates" style="display:none;">
+        <h2>📅 Important Dates</h2>
+
+        <p>Special moments yaha likhenge ❤️</p>
+
+        <ul>
+            
+            <li>Special Day -</li>
+            <li>Birthday -</li>
+        </ul>
+    </div>
+
+
+    <div id="voice" style="display:none;">
+        <h2>🎙️ Voice Note</h2>
+
+        <audio controls>
+            <source src="assets/voice.mp3" type="audio/mp3">
+        </audio>
+
+    </div>
+
+
+    <div id="sos" style="display:none;">
+        <h2>💌 SOS / Calm Corner</h2>
+
+        <p>
+        Agar kabhi gussa aaye ya mood off ho,
+        toh yaad rakhna ❤️
+        </p>
+
+        <p>
+        Ek smile karo 😊
+        Sab theek ho jayega.
+        </p>
+
+    </div>
+
+
+<script>
+
+function showSection(section){
+
+    document.getElementById("memories").style.display="none";
+    document.getElementById("dates").style.display="none";
+    document.getElementById("voice").style.display="none";
+    document.getElementById("sos").style.display="none";
+
+
+    document.getElementById(section).style.display="block";
+
+}
+
+</script>
+
+
+</body>
+</html>
