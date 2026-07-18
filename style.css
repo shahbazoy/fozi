@@ -50,11 +50,15 @@ button{
 
     margin:6px;
 
-    border:none;
+    border-radius:20px;
 
-    border-radius:22px;
+    border:1px solid rgba(255,255,255,0.5);
 
-    background:#ffffff;
+    background:rgba(255,255,255,0.45);
+
+    backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
 
     color:#d63384;
 
@@ -64,19 +68,19 @@ button{
 
     cursor:pointer;
 
-    box-shadow:0 10px 25px rgba(214,51,132,.15);
-
     transition:.3s;
+
+    box-shadow:0 8px 20px rgba(214,51,132,.15);
 
 }
 
 button:hover{
 
-    background:#ff8fbd;
+    transform:translateY(-5px);
+
+    background:rgba(255,143,189,0.75);
 
     color:white;
-
-    transform:translateY(-5px);
 
 }
 
@@ -96,18 +100,25 @@ div[id]{
 
     max-width:500px;
 
-    background:white;
-
     padding:25px;
 
     border-radius:25px;
 
-    box-shadow:0 12px 35px rgba(214,51,132,.12);
+    background:rgba(255,255,255,0.35);
+
+    backdrop-filter:blur(15px);
+
+    -webkit-backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.5);
+
+    box-shadow:
+        0 8px 32px rgba(214,51,132,0.15),
+        inset 0 1px 1px rgba(255,255,255,0.6);
 
     animation:fade .5s;
 
 }
-
 h2{
 
     color:#d63384;
