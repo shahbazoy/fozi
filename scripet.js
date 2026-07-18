@@ -1,22 +1,28 @@
+function showSection(section) {
 
-function showSection(section){
+    const sections = ["memories", "dates", "voice", "sos"];
 
-    // sab sections hide karo
-    document.getElementById("memories").style.display = "none";
-    document.getElementById("dates").style.display = "none";
-    document.getElementById("voice").style.display = "none";
-    document.getElementById("sos").style.display = "none";
+    sections.forEach(function(id) {
+        const element = document.getElementById(id);
+        element.style.display = "none";
+    });
 
+    const current = document.getElementById(section);
 
-    // jis button par click hua uska section show karo
-    let openSection = document.getElementById(section);
+    current.style.display = "block";
 
-    openSection.style.display = "block";
+    current.style.opacity = "0";
+    current.style.transform = "translateY(20px)";
 
+    setTimeout(function() {
+        current.style.transition = "0.4s";
+        current.style.opacity = "1";
+        current.style.transform = "translateY(0)";
+    }, 10);
 
-    // smooth scroll
-    openSection.scrollIntoView({
-        behavior: "smooth"
+    current.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
     });
 
 }
